@@ -1,0 +1,32 @@
+<p>{{title | titleCase}}</p>
+<!-- <p>{{title | capitalize}}</p> -->
+<br/>
+<p>
+  boundValue = {{boundValue}}
+</p>
+<br/>
+
+<section>
+  <input type="text" name="attribute" [(ngModel)]="attribute" />
+</section>
+<section>
+  <button (click)="saveValue()">Save</button>
+</section>
+<p>
+  clear local strorage
+</p>
+<br/>
+<section>boundAttribute = {{boundAttribute}}</section>
+<section>
+  <button (click)="clearItem()">Clear</button>
+</section>
+<br/>
+<button (click)="getGreetings()">call API</button>
+<p>userData = {{userData | json}}</p>
+<section>
+  Name<input type="text" [(ngModel)]="name" />
+  Job<input type="text" [(ngModel)]="job" />
+</section>
+<button (click)="createUsers()">create user</button>
+<p>userDetails = {{userDetails | json}}</p>
+
